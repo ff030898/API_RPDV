@@ -95,7 +95,7 @@ class EstablishmentRepository
         if (!$emailVerify) {
             $data['password'] = Crypt::encrypt($data['password']);
             $data['active'] = true;
-            $data['fk_planes'] = 1;
+            //$data['fk_planes'] = 1;
 
             $establishment = $this->entity::create($data->all());
 
